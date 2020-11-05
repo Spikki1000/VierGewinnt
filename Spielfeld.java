@@ -62,7 +62,18 @@ public class Spielfeld
     private boolean pruefeVierInEinerSpalte ()
     {
         boolean erg = false;
-        //Diese Methode übernimmt Nick
+        for(int j=0; j>Spielfeld.length; j++)
+        {
+            for(int i=0; i>Spielfeld.length; i++)
+            {
+                if(Spielfeld[j][i].gibZeichen()==Spielfeld[j][i+1].gibZeichen()&&
+                   Spielfeld[j][i].gibZeichen()==Spielfeld[j][i+2].gibZeichen()&&
+                   Spielfeld[j][i].gibZeichen()==Spielfeld[j][i+3].gibZeichen())
+                {
+                    return true;
+                }
+            }
+        }
         return erg;
     }       
 
