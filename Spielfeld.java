@@ -71,6 +71,21 @@ public class Spielfeld
     private boolean pruefeVierInEinerZeile ()
     {
         boolean erg = false;
+         for (int i = 0; i < Spielfeld.length ; i++)
+        {
+           for (int a = 0; a < Spielfeld.length - 3; a++)
+           { 
+            if (Spielfeld [a][i]!= null && Spielfeld [a][i+1]!= null && Spielfeld [a][i+2]!= null && Spielfeld [a][i+3]!= null)   
+               if(Spielfeld [a][i].gibZeichen() == Spielfeld [a][i+1].gibZeichen() && Spielfeld [a][i].gibZeichen() == Spielfeld[a][i+2].gibZeichen()  && Spielfeld [a][i].gibZeichen() ==Spielfeld [a][i+3].gibZeichen())
+             {
+                return true;
+             }
+             else
+             {
+                return false;
+             }
+           }
+        }
         return erg;
     }
 
