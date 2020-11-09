@@ -93,7 +93,7 @@ public class Spielfeld
             if (Spielfeld [a][i]!= null && Spielfeld [a][i+1]!= null && Spielfeld [a][i+2]!= null && Spielfeld [a][i+3]!= null)   
                if(Spielfeld [a][i].gibZeichen() == Spielfeld [a][i+1].gibZeichen() && 
                   Spielfeld [a][i].gibZeichen() == Spielfeld [a][i+2].gibZeichen() &&
-                  Spielfeld [a][i].gibZeichen() ==Spielfeld [a][i+3].gibZeichen() )
+                  Spielfeld [a][i].gibZeichen() == Spielfeld [a][i+3].gibZeichen() )
              {
                 return true;
              }
@@ -142,7 +142,8 @@ public class Spielfeld
      */
     public void ausgabeGewonnen (String Spieler)
     {
-        
+        ausgeben();
+        System.out.println ("Herzlichen Glückwunsch Sie haben das Spiel GEWONNEN");
     }
 
     /**
