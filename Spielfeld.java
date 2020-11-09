@@ -91,7 +91,9 @@ public class Spielfeld
            for (int a = 0; a < Spielfeld.length - 3; a++)
            { 
             if (Spielfeld [a][i]!= null && Spielfeld [a][i+1]!= null && Spielfeld [a][i+2]!= null && Spielfeld [a][i+3]!= null)   
-               if(Spielfeld [a][i].gibZeichen() == Spielfeld [a][i+1].gibZeichen() && Spielfeld [a][i].gibZeichen() == Spielfeld[a][i+2].gibZeichen()  && Spielfeld [a][i].gibZeichen() ==Spielfeld [a][i+3].gibZeichen())
+               if(Spielfeld [a][i].gibZeichen() == Spielfeld [a][i+1].gibZeichen() && 
+                  Spielfeld [a][i].gibZeichen() == Spielfeld [a][i+2].gibZeichen() &&
+                  Spielfeld [a][i].gibZeichen() ==Spielfeld [a][i+3].gibZeichen() )
              {
                 return true;
              }
